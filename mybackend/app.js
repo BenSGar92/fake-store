@@ -1,13 +1,13 @@
 const express = require('express')
 const app = express()
-const port = 5000
+const port = 5000;
 //if I were to send an http request to localhost:500/ then it would send back the string 'Hello World'
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
 app.get('/newEndPoint', (req, res) => {
-    res.send('Testing new endpoint!')
+    res.send('a working backend server request')
 })
 
 app.get('/test', (req, res) => {
